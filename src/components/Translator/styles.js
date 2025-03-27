@@ -59,3 +59,48 @@ export const Button = styled.button`
     background-color: #45a049;
   }
 `;
+
+export const LanguageContainer = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+`;
+
+export const SwapButton = styled.button`
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #0b7dda;
+  }
+
+  &:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+`;
+
+export const StatusMessage = styled.div`
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+`;
+
+export const ErrorMessage = styled.div`
+  color: #d32f2f;
+  background-color: #fdecea;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #d32f2f;
+`;
